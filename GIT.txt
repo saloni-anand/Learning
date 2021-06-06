@@ -1,0 +1,37 @@
+GIT
+
+1. preparation for Git:    git init
+
+2.1 To select a file, use the command   git add file_name
+ To record a selected file, run the command  git commit -m "message"
+
+2.2 Using the command   git log, you or anyone else can view the commits.
+2.3 To see the changes made, you can use git log -p
+
+With the up and down arrow keys, you can scroll through the changes. 
+And to quit just press the Q key.
+
+With git add and git commit, the 2 commands we've already learned, 
+you are ready to share files.
+
+Git uses something called a Remote to store shared files.
+Developers share files by uploading to and downloading from remotes. 
+
+3. More specifically, to register a remote, type   git remote add remote_name URL
+
+4. We can upload to the remote we made earlier by running:
+git push origin master
+Uploading like this with Git is called a push.
+
+5.  download the file by running :
+git pull origin master
+Downloading a file like this is called a pull.
+
+6. Using   git status, you can display a list of modified files.
+changed file will be in red
+files uploaded will be in green
+
+7. see the content changes: git diff.
+changed parts come in green
+Modified code will be displayed, as shown on the right, 
+with the code after in green and the code before in red.

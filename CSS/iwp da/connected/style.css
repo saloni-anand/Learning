@@ -1,0 +1,197 @@
+                                                /*MAIN PAGE*/
+h1{
+    color: rgb(161, 53, 161) !important;
+    border: solid rgb(243, 239, 17);
+    border-width: thick;
+    width:290px;
+    box-shadow: 1px 1px 35px 10px rgb(68, 194, 18);
+}
+
+h2{
+    color: blue !important;
+    text-align: center;
+    font-weight: bold ;
+}
+
+p{
+    font-size: large;
+    color: purple;
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center{
+    margin: auto;
+    text-align: center;
+}
+
+body{
+    background-image: url(butterfly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;}
+
+
+                                                    /* DROP DOWN*/
+    /* Dropdown Button */
+.dropbtn {
+    background-color: purple !important;
+    color: white !important;
+    padding: 12px;
+    font-size: 16px;
+    width: 286px !important;
+    font-weight: bolder;
+  }
+
+    /* The container <div> - position the dropdown content */
+.dropdown {
+    position: relative;
+    float: right;
+    right: auto;
+    transform: translateX(-50%);
+  }
+  
+    /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white !important;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+    /* Links inside the dropdown */
+  .dropdown-content a {
+    color: darkblue !important;
+    background-color: white !important;
+    padding: 12px 16px;
+    text-decoration: none !important;
+    display: block;
+    min-width: 250px;
+  }
+
+ .option{
+    border-style: solid !important;
+    border-width: thin;
+    text-align: center;
+  }
+  
+    /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: hotpink !important;
+}
+  
+    /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(151, 24, 151) !important;}
+
+
+
+                                            /*ART AND CRAFT*/
+ul {
+        list-style-image: url('bullet.png');
+        background-color: azure ;}
+
+li{
+    font-size: large;
+    font-family: fantasy;
+    color: rgb(24, 12, 129);}
+                                            /*FAST FACTS*/
+.fact1{
+    border-style:dashed;
+    border-color: black;
+    border-width: 1mm;
+    height: auto;
+    width: 380px;
+    padding: 1mm;
+    margin-left: 80mm;
+    text-align: center;
+}
+.fact2{
+    border-style:solid;
+    border-color: plum;
+    border-width: 0.5mm;
+    height: auto;
+    width: 380px;
+    padding: 1mm;
+    margin-left: 80mm;
+    text-align: center;
+}
+.fact3{
+    border-style:groove;
+    height: auto;
+    width: 380px;
+    padding: 1mm;
+    border-color: deeppink;
+    border-width: 1mm;
+    margin-left: 80mm;
+    text-align: center;
+}
+.fact4{
+    border-style:outset;
+    height: auto;
+    width: 380px;
+    padding: 1mm;
+    border-color: plum;
+    border-width: 1mm;
+    margin-left: 80mm;
+    text-align: center;
+}           
+
+                                            /*REFERENCES*/
+
+a:link {
+    color: blue;
+    background-color: yellowgreen;
+    font-size: large;
+    padding: 15px 25px;
+    text-decoration: underline overline blue;
+}
+a:active {
+    color: yellow !important;
+    font-size: large;
+    padding: 15px 25px;
+    background-color: green;
+    text-decoration: underline overline dotted yellow;
+}
+a:visited {
+    color: rgb(206, 55, 226);
+    font-size: large;
+    padding: 25px 25px;
+    background-color: white;
+    text-decoration: underline overline;
+}
+a:hover {
+    color: red;
+    font-size: large;
+    padding: 15px 25px;
+    background-color: yellow;
+    text-decoration: underline overline wavy red;
+}
+
+                                            /*BUTTERFLY ANIMATE*/
+
+#fly {
+    bottom: 15%;
+    display: block;
+    position: absolute;
+    animation: linear ;
+    animation-name: run;
+    animation-duration: 4s;
+  }
+  
+  @-webkit-keyframes run {
+      0% {
+        left: 0;
+        transform: translateX(0);
+      }
+      100% {
+        left: 100%;
+        transform: translateX(-100%);
+      }
+  }

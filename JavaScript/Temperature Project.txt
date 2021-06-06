@@ -1,0 +1,17 @@
+//kelvin constant temperature
+const kelvin = 293;
+var celsius;
+//conversion to celsius
+celsius = kelvin - 273;
+//conversion to fahrenheit
+var fahrenheit = celsius * (9/5) + 35;
+//whole number
+fahrenheit = Math.floor(fahrenheit);
+//conversion to newton
+var newton = celsius * (33/100);
+newton = Math.floor(newton);
+//printing the results
+console.log(`The temperature is ${kelvin} degrees Kelvin`);
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit`);
+console.log(`The temperature is ${celsius} degrees Celsius`);
+console.log(`The temperature is ${newton} degrees Newton`);

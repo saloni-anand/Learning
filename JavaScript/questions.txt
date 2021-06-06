@@ -1,0 +1,79 @@
+const lifePhase = age => {
+    if (age < 0 || age > 140) {
+        return 'This is not a valid age'
+    } else if (age < 4) {
+        return 'baby'
+    } else if (age < 13) {
+        return 'child'
+    } else if (age < 20) {
+        return 'teen'
+    } else if (age < 65) {
+        return 'adult'
+    } else {
+        return 'senior citizen'
+    }
+}
+/*
+// As a function declaration:
+function lifePhase (age) {
+    if (age < 0 || age > 140) {
+       return 'This is not a valid age'
+   } else if (age < 4) {
+        return 'baby'
+    } else if (age < 13) {
+        return 'child'
+    } else if (age < 20) {
+       return 'teen'
+    } else if (age < 65) {
+       return 'adult'
+    } else {
+        return 'senior citizen'
+    }  
+}
+*/
+console.log(lifePhase(5)) 
+
+
+
+
+
+const finalGrade = (midterm, final, homework) => {
+    if ((midterm < 0 || midterm > 100) || (final < 0 || final > 100) || (homework < 0 || homework > 100)) {
+        return 'You have entered an invalid grade.'
+    }
+    let average = (midterm + final + homework) / 3
+    if (average < 60) {
+        return 'F'
+    }
+    else if (average < 70) {
+        return 'D'
+    }
+    else if (average < 80) {
+        return 'C'
+    }
+    else if (average < 90) {
+        return 'B'
+    } else {
+        return 'A'
+    }
+}
+
+
+
+const howOld = (age, year) => {
+// The following two lines make it so that our function always knows the current year.
+    let dateToday = new Date();
+    let thisYear = dateToday.getFullYear();
+  
+    const yearDifference = year - thisYear
+    const newAge = age + yearDifference
+    if (newAge < 0) {
+        return `The year ${year} was ${-newAge} years before you were born`
+    } else if (newAge > age) {
+        return `You will be ${newAge} in the year ${year}`
+    } else {
+        return `You were ${newAge} in the year ${year}`
+    }
+}
+
+console.log(howOld(20,2000));

@@ -1,0 +1,48 @@
+.vericaltext{
+    width:1px;
+    word-wrap: break-word;
+    font-family: monospace; 
+}
+
+.covid {
+    column-count: 4;
+    column-gap: 25px;
+    column-rule-style: solid;
+    column-rule-width: 2px;
+    column-rule-color: blue;
+    column-width: 100px;
+    column-fill: balance;
+}
+
+h2{
+    column-span: all;
+    color: blue;
+    text-align: center;
+}
+
+#review{
+    text-align: center;
+}
+
+#corona{
+    display: block;
+    position: relative;
+    animation: infinite alternate;
+    animation-name: run;
+    animation-duration: 2s;
+    }
+      
+    @-webkit-keyframes run {
+        0%{ 
+            top: 0; left: 0;
+        }
+        33% {
+            top: 0; left: 100px;
+        }
+        66%{
+            top: 100px; left: 100px;
+        }
+        100%{
+            top:100px; left: 200px;
+        }
+    }
